@@ -1,0 +1,336 @@
+ 99  FRANCISCO PARRA CINE / CINEWORLD.html 
+@@ -0,0 +1,99 @@
+﻿<! DOCTYPE html >
+< html  lang = " en " >
+< cabeza >
+	< meta  charset = " UTF-8 " >
+	< meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+	< link  rel = " stylesheet " href = " css / estilos.css " >
+	< link  href = " https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap " rel = " hoja de estilo " > 
+	< título > CINE WORLD </ título >
+</ cabeza >
+< cuerpo >
+	< encabezado >
+		< div  class = " contenedor " >
+			< h2  class = " logotipo " > CINE WORLD </ h2 >
+			< nav >
+				< Un  href = " # " clase =" activo " > Inicio </ a >
+				< Un  href = " # " > Serie </ a >
+				< Un  href = " # " > Películas </ a >
+				< Un  href = " # " > Mas Recientes </ a >
+				< Un  href = " # " > Mi lista </ a >
+			</ nav >
+		</ div >
+	</ encabezado >
+
+	< principal >
+		< div  class = " pelicula-principal " >
+			< div  class = " contenedor " >
+				< h3  class = " titulo " > NARUTO </ h3 >
+                < p  class = " descripcion " >
+                    Guiado por el espíritu demoníaco que hay en él, el huérfano Naruto aprende a controlar sus poderes como un ninja en esta serie de anime de aventuras.
+
+                </ p >
+				< button  role = " button " class = " boton " > < i  class = " fas fa-play " > </ i > Reproducir </ button >
+				< button  role = " button " class = " boton " > < i  class = " fas fa-info-circle " > </ i > Más información </ button >
+			</ div >
+		</ div >
+
+		< div  class = " peliculas-recomendadas contenedor " >
+			< div  class = " contenedor-titulo-controles " >
+				< h3 > Películas Recomendadas </ h3 >
+				< div  class = " indicadores " > </ div >
+			</ div >
+
+			< div  class = " contenedor-principal " >
+				< button  role = " button " id = " flecha-izquierda " class = " flecha-izquierda " > < i  class = " fas fa-angle-left " > </ i > </ button >
+
+				< div  class = " contenedor-carrusel " >
+					< div  class = " carrusel " >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja14.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja15.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja16.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja17.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja18.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja19.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja20.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja21.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja22.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja23.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja24.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja25f.png " alt ="" > </ a >
+						</ div >
+						< div  class = " pelicula " >
+							< Un  href = " # " > < img  src =" / img fraja26.png " alt ="" > </ a >
+						</ div >
+
+					</ div >
+				</ div >
+
+				< button  role = " button " id = " flecha-derecha " class = " flecha-derecha " > < i  class = " fas fa-angle-right " > </ i > </ button >
+			</ div >
+		</ div >
+	</ main >
+
+	< script  src = " https://kit.fontawesome.com/2c36e9b7b1.js " crossorigin = " anonymous " > </ script >
+	< script  src = " js / main.js " > </ script >
+</ cuerpo >
+</ html > 
+ 234  FRANCISCO PARRA CINE / css / estilos.css 
+@@ -0,0 +1,234 @@
+: root {
+	--rojo :  # E50914 ;
+	--fondo :  # 141414 ;
+}
+
+* {
+	margen :  0 ;
+	acolchado :  0 ;
+	de caja de tamaño : frontera-box;
+}
+
+cuerpo {
+	fondo :  var ( --fondo );
+	familia de fuentes :  'Open Sans' , sans-serif;
+}
+
+. contenedor {
+	ancho :  90 % ;
+	margen : automático;
+}
+
+encabezado {
+	relleno :  30 px  0 ;
+}
+
+encabezado . contenedor {
+	pantalla : flex;
+	justificar-contenido : espacio-entre;
+	alinear-elementos : centro;
+}
+
+encabezado . logotipo {
+	familia de fuentes :  'Bebas Neue' , cursiva;
+	font-weight : normal;
+	color :  var ( --rojo );
+	tamaño de fuente :  40 px ;
+}
+
+header  nav  a {
+	color :  # AAA ;
+	decoración de texto : ninguna;
+	margen derecho :  20 px ;
+}
+
+header  nav  a : hover ,
+ navegación de  encabezado a . activo {
+	color :  # FFF ;
+}
+
+/ * ---- ----- ----- Director de Pelicula ----- ----- ----- * /
+. pelicula-principal {
+	tamaño de fuente :  16 px ;
+	altura mínima :  40,62 cm ;
+	color :  # fff ;
+	fondo :  gradiente lineal ( rgba ( 0 ,  0 ,  0 ,  .50 ) 0 % ,  rgba ( 0 , 0 , 0 , .50 ) 100 % ) , url (.. / img / fraja.jpg);
+	posición de fondo : centro centro;
+	background-size : cover;
+	margen inferior :  3,12 em ;
+	pantalla : flex;
+	alinear-elementos : fin;
+}
+
+. pelicula-principal . contenedor {
+	margen :  0 automático;
+	margen inferior :  6,25 em ;
+}
+
+. pelicula-principal . titulo {
+	peso de fuente :  600 ;
+	tamaño de fuente :  3,12 em ;
+	margen inferior :  0,4 em ;
+}
+
+. pelicula-principal . descripcion {
+	font-weight : normal;
+	tamaño de fuente :  1 em ;
+	altura de línea :  1,75 cm ;
+	ancho máximo :  50 % ;
+	margen inferior :  1,25 em ;
+}
+
+. pelicula-principal . boton {
+	fondo :  rgba ( 0 , 0 , 0 ,  0.5 );
+	borde : ninguno;
+	radio del borde :  0,31 cm ;
+	acolchado :  0,93 em  1,87 em ;
+	color :  # fff ;
+	margen derecho :  1,25 em ;
+	cursor : puntero;
+	transición :  .3 s facilitar todo;
+	tamaño de fuente :  1,12 em ;
+}
+
+. pelicula-principal . boton : hover {
+	fondo :  # fff ;
+	color :  # 000 ;
+}
+
+. pelicula-principal . boton  i {
+	margen derecho :  1,25 em ;
+}
+
+/ * ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- * /
+. contenedor-titulo-controles {
+	pantalla : flex;
+	justificar-contenido : espacio-entre;
+	alinear-elementos : fin;
+}
+
+. contenedor-titulo-controles  h3 {
+	color :  # fff ;
+	tamaño de fuente :  30 px ;
+}
+
+. contenedor-titulo-controles . botón indicadores  {
+	fondo :  # fff ;
+	altura :  3 px ;
+	ancho :  10 px ;
+	cursor : puntero;
+	borde : ninguno;
+	margen derecho :  2 px ;
+}
+
+. contenedor-titulo-controles . botón indicadores  : flotar ,
+. contenedor-titulo-controles . botón indicadores  . activo {
+	fondo : rojo;
+}
+
+
+/ * ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- * /
+. peliculas-recomendadas {
+	margen inferior :  70 px ;
+}
+
+. peliculas-recomendadas . contenedor-principal {
+	pantalla : flex;
+	alinear-elementos : centro;
+	posición : relativa;
+}
+
+. peliculas-recomendadas . contenedor-principal . flecha-izquierda ,
+. peliculas-recomendadas . contenedor-principal . flecha-derecha {
+	posición : absoluta;
+	borde : ninguno;
+	fondo :  rgba ( 0 , 0 , 0 , 0.3 );
+	tamaño de fuente :  40 px ;
+	altura :  50 % ;
+	arriba :  calc ( 50 %  -  25 % );
+	altura de línea :  40 px ;
+	ancho :  50 px ;
+	color :  # fff ;
+	cursor : puntero;
+	índice z :  500 ;
+	transición :  .2 s facilitar todo;
+}
+
+. peliculas-recomendadas . contenedor-principal . flecha-izquierda : hover ,
+. peliculas-recomendadas . contenedor-principal . flecha-derecha : desplazarse {
+	fondo :  rgba ( 0 , 0 , 0 ,  .9 );
+}
+
+. peliculas-recomendadas . contenedor-principal . flecha-izquierda {
+	izquierda :  0 ;
+}
+
+. peliculas-recomendadas . contenedor-principal . flecha-derecha {
+	derecha :  0 ;
+}
+
+/ * ---- ----- ----- Carrusel ----- ----- ----- * /
+. peliculas-recomendadas . contenedor-carrusel {
+	ancho :  100 % ;
+	relleno :  20 px  0 ;
+	desbordamiento : oculto;
+	comportamiento de desplazamiento : suave;
+}
+
+. peliculas-recomendadas . contenedor-carrusel . carrusel {
+	pantalla : flex;
+	envoltura flexible : nowrap;
+}
+
+. peliculas-recomendadas . contenedor-carrusel . carrusel . pelicula {
+	ancho mínimo :  20 % ;
+	transición :  .3 s facilitar todo;
+	caja-sombra :  5 px  5 px  10 px  rgba ( 0 , 0 , 0 ,  .3 );
+}
+
+. peliculas-recomendadas . contenedor-carrusel . carrusel . pelicula . hover {
+	transformar :  escala ( 1.2 );
+	origen de transformación : centro;
+}
+
+. peliculas-recomendadas . contenedor-carrusel . carrusel . pelicula  img {
+	ancho :  100 % ;
+	alineación vertical : superior;
+}
+
+/* ---- ----- ----- Preguntas de los medios ----- ----- ----- */
+@media pantalla y ( ancho máximo :  800 px ) {
+	encabezado . logotipo {
+		margen inferior :  10 px ;
+		tamaño de fuente :  30 px ;
+	}
+
+	encabezado . contenedor {
+		flex-direction : columna;
+		alineación de texto : centro;
+	}
+
+	. pelicula-principal {
+		tamaño de fuente :  14 px ;
+	}
+
+	. pelicula-principal . descripcion {
+		ancho máximo :  100 % ;
+	}
+
+	. peliculas-recomendadas . contenedor-carrusel {
+		desbordamiento : visible;
+	}
+
+	. peliculas-recomendadas . contenedor-carrusel . carrusel {
+		pantalla : cuadrícula;
+		columnas de plantilla de cuadrícula :  repetir ( 3 ,  1 fr );
+		espacio :  20 px ;
+	}
+
+	. peliculas-recomendadas . indicadores ,
+	. peliculas-recomendadas . flecha-izquierda ,
+	. peliculas-recomendadas . flecha-derecha {
+		pantalla : ninguna;
+	}
